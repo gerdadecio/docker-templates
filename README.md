@@ -81,7 +81,7 @@ A simple bash script to copy a specified folder from a source or template direct
 
 ### Usage
 ```bash
-SOURCE_DIR="/path/to/your/docker-templates" ./cli.sh -f <folder_name>
+SOURCE_DIR="/path/to/your/docker-templates" bash /path/to/your/docker-templates/cli.sh -f <folder_name>
 ```
 
 - `-f <folder_name>`: Name of the folder to copy.
