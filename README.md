@@ -72,3 +72,17 @@ You can find different frameworks or use cases in each folder.
 ### Rust programming language & related frameworks
 
 - Plain Rust: [Dockerfile](./15-Rust/Dockerfile), [Readme](./15-Rust/README.md)
+
+## Folder Copier CLI
+A simple bash script to copy a specified folder from a source or template directory to the current working directory.
+
+### Usage
+```bash
+SOURCE_DIR="/path/to/your/docker-templates" ./cli.sh -f <folder_name>
+```
+
+- `-f <folder_name>`: Name of the folder to copy.
+- Copies the folder from `$SOURCE_DIR` or `$SOURCE_DIR/templates` to the current path.
+
+### Environment Variables
+`SOURCE_DIR`: Directory where folders are stored. Defaults to `$HOME`.
