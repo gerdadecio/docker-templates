@@ -1,4 +1,5 @@
-NOTE: This is a modified version of [devopshobbies/docker-templates](devopshobbies/docker-templates)
+**NOTE:** 
+This is a fork of [devopshobbies/docker-templates](devopshobbies/docker-templates) with additional modifications. I haven't had the time to submit a PR or make changes based on potential code reviews, as the process of preparing and updating contributions would require more time than I currently have.
 
 <img src="./_assets/banner.png" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block">
 
