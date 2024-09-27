@@ -13,6 +13,37 @@ Let's grow together - DevOps Hobbies team.
 In this repository, we are trying to gather some practical samples of the `docker` file templates for each language and technology, so you can use them in your projects.
 We are trying to provide docker files and templates as best practices.
 
+## Folder Copier CLI
+A simple bash script to copy a specified folder from a source or template directory to the current working directory.
+
+### Usage
+```bash
+SOURCE_DIR="/path/to/your/docker-templates" bash /path/to/your/docker-templates/cli.sh -f <folder_name>
+```
+
+you can add an alias
+```bash
+# ~/.my_aliases
+newdockerproj() {
+  (SOURCE_DIR="/path/to/your/docker-templates" bash /path/to/your/docker-templates/cli.sh -f "$1")
+}
+```
+
+and just run
+```bash
+# to copy the docker templates for golang
+newdockerproj go
+
+# show help - for a list of templates
+ndewdockerproj
+```
+
+- `-f <folder_name>`: Name of the folder to copy.
+- Copies the folder from `$SOURCE_DIR` or `$SOURCE_DIR/templates` to the current path.
+
+### Environment Variables
+`SOURCE_DIR`: Directory where folders are stored. Defaults to `$HOME`.
+
 ## How to contribute?
 
 We are performing a helpful guide about how you can contribute to the project and You can access it [from here](./CONTRIBUTING.md).
@@ -75,17 +106,3 @@ You can find different frameworks or use cases in each folder.
 ### Rust programming language & related frameworks
 
 - Plain Rust: [Dockerfile](./15-Rust/Dockerfile), [Readme](./15-Rust/README.md)
-
-## Folder Copier CLI
-A simple bash script to copy a specified folder from a source or template directory to the current working directory.
-
-### Usage
-```bash
-SOURCE_DIR="/path/to/your/docker-templates" bash /path/to/your/docker-templates/cli.sh -f <folder_name>
-```
-
-- `-f <folder_name>`: Name of the folder to copy.
-- Copies the folder from `$SOURCE_DIR` or `$SOURCE_DIR/templates` to the current path.
-
-### Environment Variables
-`SOURCE_DIR`: Directory where folders are stored. Defaults to `$HOME`.
