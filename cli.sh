@@ -1,12 +1,22 @@
 #!/bin/bash
 
 # Default source directory (replace this with your actual source path)
-SOURCE_DIR="/Volumes/GD-APFS/WORK/UTILS/docker-templates"
+SOURCE_DIR="${SOURCE_DIR:-$HOME}"
+TEMPLATE_DIR="${SOURCE_DIR:-$HOME}/templates"
 
 # Function to display usage
 usage() {
   echo "Usage: $0 -f <folder_name>"
-  echo "Available dir
+  echo ""
+  echo "Available <folder_name>:"
+  
+  # List folders in the source directory
+  for folder in "$TEMPLATE_DIR"/*; do
+    if [ -d "$folder" ]; then
+      echo "  - $(basename "$folder")"
+    fi
+  done
+  
   exit 1
 }
 
@@ -31,10 +41,10 @@ fi
 DEST_DIR="$(pwd)/$FOLDER_NAME"
 
 # Copy the folder
-if [ -d "$SOURCE_DIR/$FOLDER_NAME" ]; then
-  cp -r "$SOURCE_DIR/$FOLDER_NAME" "$DEST_DIR"
-  echo "Copied $SOURCE_DIR/$FOLDER_NAME to $DEST_DIR"
+if [ -d "$TEMPLATE_DIR/$FOLDER_NAME" ]; then
+  cp -r "$TEMPLATE_DIR/$FOLDER_NAME" "$DEST_DIR"
+  echo "Copied $TEMPLATE_DIR/$FOLDER_NAME to $DEST_DIR"
 else
-  echo "Error: Source folder '$SOURCE_DIR/$FOLDER_NAME' does not exist."
+  echo "Error: Source folder '$TEMPLATE_DIR/$FOLDER_NAME' does not exist."
   exit 1
 fi
