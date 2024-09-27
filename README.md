@@ -1,3 +1,5 @@
+NOTE: This is a modified version of [devopshobbies/docker-templates](devopshobbies/docker-templates)
+
 <img src="./_assets/banner.png" style="width: 100%; max-width: 1200px; margin: 0 auto; display: block">
 
 # Docker-Templates
