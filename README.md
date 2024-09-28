@@ -57,52 +57,54 @@ You can find different frameworks or use cases in each folder.
 
 ### Javascript, Typescript `Backend` & related frameworks
 
-- Plain NodeJS: [Dockerfile](01-JavaScript-Typescript-Backend/Dockerfile), [Readme](./01-JavaScript-Typescript-Backend/README.md/)
-- NestJS: [Dockerfile](01-JavaScript-Typescript-Backend/frameworks/nestjs/Dockerfile), [Readme](./01-JavaScript-Typescript-Backend/frameworks/nestjs/README.md)
+- Plain NodeJS: [Dockerfile](./templates/js-tsx-backend/Dockerfile), [Readme](./templates/js-tsx-backend/README.md/)
+- Plain/vanilla version of nodejs with tests: [Dockerfile](./templates/nodejs/Dockerfile), [Readme](./templates/nodejs/README.md)
+- NestJS: [Dockerfile](./templates/js-tsx-backend/frameworks/nestjs/Dockerfile), [Readme](./templates/js-tsx-backend/frameworks/nestjs/README.md)
 
 ### Javascript, Typescript `Frontend` & related frameworks
 
-- Plain Javascript: [Readme](./02-JavaScript-Typescript-Frontend/README.md)
-- Angular: [Dockerfile](./10-Angular/angular/Dockerfile), [Docker Compose](./10-Angular/compose.yaml), [Readme](./10-Angular/README.md)
-- Vue.JS: [Dockerfile](./11-Vue.js/Dockerfile), [Readme](./11-Vue.js/README.md)
-- React: [Dockerfile](./12-React/Dockerfile), [Readme](./12-React/README.md)
+- Plain Javascript: [Readme](./templates/js-tsx-frontend/README.md)
+- Angular: [Dockerfile](./templates/angular/angular/Dockerfile), [Docker Compose](./templates/angular/compose.yaml), [Readme](./templates/angular/README.md)
+- Vue.JS: [Dockerfile](./templates/vue.js/Dockerfile), [Readme](./templates/vue.js/README.md)
+- React: [Dockerfile](./templates/react/Dockerfile), [Readme](./templates/react/README.md)
+
 
 ### PHP programming language & related frameworks
 
-- Plain PHP: [Readme](./03-PHP/./README.md)
-- Laravel: [Dockerfile](./03-PHP/laravel/Dockerfile), [Readme](./03-PHP/laravel/README.md)
+- Plain PHP: [Readme](./templates/php/./README.md)
+- Laravel: [Dockerfile](./templates/php/laravel/Dockerfile), [Readme](./templates/php/laravel/README.md)
 
 ### Go programming language & related frameworks
 
-- Plain Go: [Dockerfile](./04-GO/Dockerfile), [Readme](./04-GO/README.md)
+- Plain Go: [Dockerfile](./templates/go/Dockerfile), [Readme](./templates/go/README.md)
 
 ### Java programming language & related frameworks
 
-- Plain Java: [Readme](./05-JAVA/README.md)
-- Maven: [Dockerfile](./05-JAVA/Maven/README.md), [Readme](./05-JAVA/Maven/README.md)
+- Plain Java: [Readme](./templates/java/README.md)
+- Maven: [Dockerfile](./templates/java/Maven/README.md), [Readme](./templates/java/Maven/README.md)
 
 ### C# programming language & related frameworks
 
-- Plain C# (hello docker example): [Dockerfile](./06-C%23/HelloDocker/Dockerfile), [Readme](./06-C%23/HelloDocker/README.md)
+- Plain C# (hello docker example): [Dockerfile](./templates/c%23/HelloDocker/Dockerfile), [Readme](./templates/c%23/HelloDocker/README.md)
 
 ### Python programming language & related frameworks
 
-- Python Flask (hello world app): [Dockerfile](./07-Python/python-flask/Dockerfile), [Readme](./07-Python/python-flask/README.md)
-- Plain Python with postgres: [Dockerfile](./07-Python/python-with-postgresql/Dockerfile), [Dockerfile Compose](./07-Python/python-with-postgresql/docker-compose.yaml), [Readme](./07-Python/README.md)
-- Django: [Dockerfile](./07-Python/python-django/Django), readme required
+- Python Flask (hello world app): [Dockerfile](./templates/python/python-flask/Dockerfile), [Readme](./templates/python/python-flask/README.md)
+- Plain Python with postgres: [Dockerfile](./templates/python/python-with-postgresql/Dockerfile), [Dockerfile Compose](./templates/python/python-with-postgresql/docker-compose.yaml), [Readme](./templates/python/README.md)
+- Django: [Dockerfile](./templates/python/python-django/Django), readme required
 
 ### C++ programming language & related frameworks
 
-- Plain C++ (hello world example): [Dockerfile](./08-C%2B%2B/Dockerfile), [Readme](./08-C%2B%2B/README.md)
+- Plain C++ (hello world example): [Dockerfile](./templates/c%2B%2B/Dockerfile), [Readme](./templates/c%2B%2B/README.md)
 
 ### Ruby programming language & related frameworks
 
-- Plain Ruby (hello world example): [Dockerfile](./09-RUBY/Dockerfile), [Readme](./README.md)
+- Plain Ruby (hello world example): [Dockerfile](./templates/ruby/Dockerfile), [Readme](./templates/ruby/README.md)
 
 ### Dart programming language & related frameworks
 
-- Plain Dart (hello world example): [Dockerfile](./14-Dart/Dockerfile), [Readme](./14-Dart/README.md)
+- Plain Dart (hello world example): [Dockerfile](./templates/dart/Dockerfile), [Readme](./templates/dart/README.md)
 
 ### Rust programming language & related frameworks
 
-- Plain Rust: [Dockerfile](./15-Rust/Dockerfile), [Readme](./15-Rust/README.md)
+- Plain Rust: [Dockerfile](./templates/rust/Dockerfile), [Readme](./templates/rust/README.md)
