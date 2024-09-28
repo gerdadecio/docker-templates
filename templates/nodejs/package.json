@@ -1,0 +1,17 @@
+{
+  "name": "hello-nodejs",
+  "version": "1.0.0",
+  "description": "Simple nodejs app",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^27.4.7"
+  }
+}
